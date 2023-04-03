@@ -4,11 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "start": "firebase emulators:exec vite --only firestore --ui",
+    "serve": "npm run build && firebase emulators:start --only firestore",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "firebase": "^9.19.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
