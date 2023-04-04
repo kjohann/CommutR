@@ -14,16 +14,15 @@
   -webkit-text-size-adjust: 100%;
 }
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 #root {
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  flex-direction: column;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }

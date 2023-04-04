@@ -1,5 +1,5 @@
 
-import { getFirestore, connectFirestoreEmulator, addDoc, collection, WithFieldValue, DocumentData, Firestore } from "firebase/firestore";
+import { getFirestore, connectFirestoreEmulator, addDoc, collection, WithFieldValue, DocumentData, Firestore, Timestamp } from "firebase/firestore";
 import { app } from "./init";
 
 let db: Firestore;
@@ -13,5 +13,8 @@ if (import.meta.env.VITE_USEEMULATORS) {
 
 export const addDocument = async <T extends WithFieldValue<DocumentData>>(collectionName: string, doc: T) => {
   const collectionRef = collection(db, collectionName);
-  return await addDoc(collectionRef, doc);
+  return await addDoc(collectionRef, {
+    updatedAt: Timestamp.fromMillis(Date.now()),
+    ...doc
+  });
 }
