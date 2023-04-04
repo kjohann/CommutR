@@ -1,4 +1,6 @@
 import { FunctionComponent } from 'react';
+import { Modal } from 'react-bootstrap';
+import { PlainButton } from '../../components/Buttons';
 
 type JourneyProps = {
   params: {
@@ -9,8 +11,10 @@ type JourneyProps = {
 
 export const Journey: FunctionComponent<JourneyProps> = ({ params }) => {
   return (
-    <div>
-      Journey page for id: {params.id}
-    </div>
+    <>
+      <div>
+        <PlainButton>Add point</PlainButton>
+      </div>
+    </>
   )
 }
