@@ -1,6 +1,6 @@
-import { FunctionComponent } from 'react';
-import { Modal } from 'react-bootstrap';
+import { FC, useState } from 'react';
 import { PlainButton } from '../../components/Buttons';
+import { AddPointModal } from './components/AddPointModal';
 
 type JourneyProps = {
   params: {
@@ -9,11 +9,17 @@ type JourneyProps = {
 }
 
 
-export const Journey: FunctionComponent<JourneyProps> = ({ params }) => {
+export const Journey: FC<JourneyProps> = ({ params }) => {
+  const [isPointDialogOpen, setIsPointDialogOpen] = useState(false);
+  
   return (
     <>
       <div>
-        <PlainButton>Add point</PlainButton>
+        <PlainButton onClick={() => setIsPointDialogOpen(true)}>Add point</PlainButton>
+        <AddPointModal 
+          onClose={() => setIsPointDialogOpen(false)}
+          isOpen={isPointDialogOpen}
+        />
       </div>
     </>
   )

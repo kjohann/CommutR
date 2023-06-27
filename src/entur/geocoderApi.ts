@@ -7,7 +7,7 @@ type GeoCoderResponseFeatures = {
     county: string,
     locality: string,
     label: string,
-    category: Array<'railStation' | 'onstreetBus'>
+    category: Array<'railStation' | 'onstreetBus' | 'vegadresse' | 'metroStation'>
   }
 }
 
@@ -15,13 +15,15 @@ type GeoCoderResponse = {
   features: GeoCoderResponseFeatures[]
 }
 
-enum PlaceType {
-  Unknown,
-  Bus,
-  Rail
+export enum PlaceType {
+  Unknown = 'Unknown',
+  Bus = 'Buss',
+  Rail = 'Tog',
+  Metro = 'T-bane',
+  StreetAddress = 'Gateadresse'
 }
 
-type PlaceResult = {
+export type PlaceResult = {
   stopPlaceId: string,
   name: string,
   locality: string,
@@ -44,6 +46,10 @@ export const getPlaces : (placeName: string) => Promise<PlaceResult[]> = async (
             return PlaceType.Bus;
           case 'railStation':
             return PlaceType.Rail;
+          case 'metroStation':
+            return PlaceType.Metro;
+          case 'vegadresse':
+            return PlaceType.StreetAddress;
           default:
             return PlaceType.Unknown;
         }
@@ -51,5 +57,5 @@ export const getPlaces : (placeName: string) => Promise<PlaceResult[]> = async (
         return categoriesArray.indexOf(value) === index;
       })
     }
-  });
+  }).filter((place) => !!place.categories.find((c) => c !== PlaceType.Unknown));
 }
