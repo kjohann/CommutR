@@ -1,0 +1,296 @@
+{
+  "geocoding": {
+    "version": "0.2",
+    "attribution": "http://pelias.mapzen.com/v1/attribution",
+    "query": {
+      "text": "Grenseveien Grenseveien",
+      "parser": "addressit",
+      "tokens": [
+        "Grenseveien",
+        "Grenseveien"
+      ],
+      "size": 8,
+      "layers": [
+        "address",
+        "venue"
+      ],
+      "sources": [
+        "openstreetmap",
+        "whosonfirst"
+      ],
+      "private": false,
+      "lang": {
+        "name": "Norwegian",
+        "iso6391": "no",
+        "iso6393": "nor",
+        "defaulted": false
+      },
+      "querySize": 20
+    },
+    "engine": {
+      "name": "Pelias",
+      "author": "Mapzen",
+      "version": "1.0"
+    },
+    "timestamp": 1680634402791
+  },
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.809779,
+          59.719884
+        ]
+      },
+      "properties": {
+        "id": "NSR:StopPlace:5265",
+        "gid": "whosonfirst:venue:NSR:StopPlace:5265",
+        "layer": "venue",
+        "source": "whosonfirst",
+        "source_id": "NSR:StopPlace:5265",
+        "name": "Grenseveien",
+        "street": "NOT_AN_ADDRESS-NSR:StopPlace:5265",
+        "accuracy": "point",
+        "country_a": "NOR",
+        "county": "Viken",
+        "county_gid": "whosonfirst:county:KVE:TopographicPlace:30",
+        "locality": "Ås",
+        "locality_gid": "whosonfirst:locality:KVE:TopographicPlace:3021",
+        "label": "Grenseveien, Ås",
+        "category": [
+          "onstreetBus"
+        ],
+        "tariff_zones": [
+          "RUT:FareZone:10",
+          "RUT:TariffZone:2S"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.382389669350438,
+          60.21923223410503
+        ]
+      },
+      "properties": {
+        "id": "KVE:TopographicPlace:3007-Grenseveien",
+        "gid": "whosonfirst:address:KVE:TopographicPlace:3007-Grenseveien",
+        "layer": "address",
+        "source": "whosonfirst",
+        "source_id": "KVE:TopographicPlace:3007-Grenseveien",
+        "name": "Grenseveien",
+        "street": "Grenseveien",
+        "accuracy": "point",
+        "country_a": "NOR",
+        "county": "Viken",
+        "county_gid": "whosonfirst:county:KVE:TopographicPlace:30",
+        "locality": "Ringerike",
+        "locality_gid": "whosonfirst:locality:KVE:TopographicPlace:3007",
+        "borough": "Åsbygda",
+        "borough_gid": "whosonfirst:borough:30070301",
+        "label": "Grenseveien, Ringerike",
+        "category": [
+          "street"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.62944884197512,
+          59.686253011111326
+        ]
+      },
+      "properties": {
+        "id": "KVE:TopographicPlace:3022-Grenseveien",
+        "gid": "whosonfirst:address:KVE:TopographicPlace:3022-Grenseveien",
+        "layer": "address",
+        "source": "whosonfirst",
+        "source_id": "KVE:TopographicPlace:3022-Grenseveien",
+        "name": "Grenseveien",
+        "street": "Grenseveien",
+        "accuracy": "point",
+        "country_a": "NOR",
+        "county": "Viken",
+        "county_gid": "whosonfirst:county:KVE:TopographicPlace:30",
+        "locality": "Frogn",
+        "locality_gid": "whosonfirst:locality:KVE:TopographicPlace:3022",
+        "borough": "Vannverksområdet",
+        "borough_gid": "whosonfirst:borough:30220106",
+        "label": "Grenseveien, Frogn",
+        "category": [
+          "street"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.717186792966287,
+          58.88966625671738
+        ]
+      },
+      "properties": {
+        "id": "KVE:TopographicPlace:1108-Grenseveien",
+        "gid": "whosonfirst:address:KVE:TopographicPlace:1108-Grenseveien",
+        "layer": "address",
+        "source": "whosonfirst",
+        "source_id": "KVE:TopographicPlace:1108-Grenseveien",
+        "name": "Grenseveien",
+        "street": "Grenseveien",
+        "accuracy": "point",
+        "country_a": "NOR",
+        "county": "Rogaland",
+        "county_gid": "whosonfirst:county:KVE:TopographicPlace:11",
+        "locality": "Sandnes",
+        "locality_gid": "whosonfirst:locality:KVE:TopographicPlace:1108",
+        "borough": "Lura 1",
+        "borough_gid": "whosonfirst:borough:11080202",
+        "label": "Grenseveien, Sandnes",
+        "category": [
+          "street"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7670761264468,
+          63.10944157688113
+        ]
+      },
+      "properties": {
+        "id": "KVE:TopographicPlace:1505-Grenseveien",
+        "gid": "whosonfirst:address:KVE:TopographicPlace:1505-Grenseveien",
+        "layer": "address",
+        "source": "whosonfirst",
+        "source_id": "KVE:TopographicPlace:1505-Grenseveien",
+        "name": "Grenseveien",
+        "street": "Grenseveien",
+        "accuracy": "point",
+        "country_a": "NOR",
+        "county": "Møre og Romsdal",
+        "county_gid": "whosonfirst:county:KVE:TopographicPlace:15",
+        "locality": "Kristiansund",
+        "locality_gid": "whosonfirst:locality:KVE:TopographicPlace:1505",
+        "borough": "Juulenga",
+        "borough_gid": "whosonfirst:borough:15050804",
+        "label": "Grenseveien, Kristiansund",
+        "category": [
+          "street"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.027933395717415,
+          59.00447154907587
+        ]
+      },
+      "properties": {
+        "id": "KVE:TopographicPlace:3805-Grenseveien",
+        "gid": "whosonfirst:address:KVE:TopographicPlace:3805-Grenseveien",
+        "layer": "address",
+        "source": "whosonfirst",
+        "source_id": "KVE:TopographicPlace:3805-Grenseveien",
+        "name": "Grenseveien",
+        "street": "Grenseveien",
+        "accuracy": "point",
+        "country_a": "NOR",
+        "county": "Vestfold og Telemark",
+        "county_gid": "whosonfirst:county:KVE:TopographicPlace:38",
+        "locality": "Larvik",
+        "locality_gid": "whosonfirst:locality:KVE:TopographicPlace:3805",
+        "borough": "Varden",
+        "borough_gid": "whosonfirst:borough:38051306",
+        "label": "Grenseveien, Larvik",
+        "category": [
+          "street"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.11069349661013,
+          59.29254472143032
+        ]
+      },
+      "properties": {
+        "id": "KVE:TopographicPlace:3003-Grenseveien",
+        "gid": "whosonfirst:address:KVE:TopographicPlace:3003-Grenseveien",
+        "layer": "address",
+        "source": "whosonfirst",
+        "source_id": "KVE:TopographicPlace:3003-Grenseveien",
+        "name": "Grenseveien",
+        "street": "Grenseveien",
+        "accuracy": "point",
+        "country_a": "NOR",
+        "county": "Viken",
+        "county_gid": "whosonfirst:county:KVE:TopographicPlace:30",
+        "locality": "Sarpsborg",
+        "locality_gid": "whosonfirst:locality:KVE:TopographicPlace:3003",
+        "borough": "Lande",
+        "borough_gid": "whosonfirst:borough:30032206",
+        "label": "Grenseveien, Sarpsborg",
+        "category": [
+          "street"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.328995896958762,
+          59.426803579654305
+        ]
+      },
+      "properties": {
+        "id": "KVE:TopographicPlace:3016-Grenseveien",
+        "gid": "whosonfirst:address:KVE:TopographicPlace:3016-Grenseveien",
+        "layer": "address",
+        "source": "whosonfirst",
+        "source_id": "KVE:TopographicPlace:3016-Grenseveien",
+        "name": "Grenseveien",
+        "street": "Grenseveien",
+        "accuracy": "point",
+        "country_a": "NOR",
+        "county": "Viken",
+        "county_gid": "whosonfirst:county:KVE:TopographicPlace:30",
+        "locality": "Rakkestad",
+        "locality_gid": "whosonfirst:locality:KVE:TopographicPlace:3016",
+        "borough": "Mjørud",
+        "borough_gid": "whosonfirst:borough:30160108",
+        "label": "Grenseveien, Rakkestad",
+        "category": [
+          "street"
+        ]
+      }
+    }
+  ],
+  "bbox": [
+    5.717186792966287,
+    58.88966625671738,
+    11.328995896958762,
+    63.10944157688113
+  ]
+}
