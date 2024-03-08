@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { addJourney } from '../journey/journeyService';
+import { addJourney } from '../../journeyService';
 import { useLocation } from 'wouter';
 
 const LogoContainer = styled.div`
